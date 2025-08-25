@@ -3,9 +3,7 @@ The XCS Bug Bounty Toolkit is an all-in-one automation framework for security re
 
 
 
-<p align="center">
-  <img src="assets/banner.png" alt="XCS Bug Bounty Toolkit Banner"/>
-</p>
+
 
 # XCS Bug Bounty Toolkit
 
