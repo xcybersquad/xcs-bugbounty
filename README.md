@@ -26,3 +26,6 @@ Clone this repository:
 ```bash
 git clone https://github.com/YOUR_USERNAME/xcs-bugbounty.git
 cd xcs-bugbounty
+chmod +x xcs-bugbounty.sh
+./xcs-bugbounty.sh
+
