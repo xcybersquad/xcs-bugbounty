@@ -1,0 +1,8 @@
+# Python dependencies for XCS Bug Bounty Toolkit
+
+requests
+beautifulsoup4
+lxml
+holehe
+h8mail
+weasyprint
