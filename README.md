@@ -24,10 +24,11 @@ It integrates popular bug bounty and OSINT tools into a single script to simplif
 ## 🚀 Quick Start
 Clone this repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/xcs-bugbounty.git
-cd xcs-bugbounty
-chmod +x xcs-bugbounty.sh
-./xcs-bugbounty.sh
+git clone https://github.com/YOUR_USERNAME/xcs-bugbounty-full.git
+cd xcs-bugbounty-full
+chmod +x xcs-bugbounty-full.sh
+./xcs-bugbounty-full.sh
+use bash or ./ command 
 
 # OUTPUT >>
 
