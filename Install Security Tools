@@ -1,0 +1,23 @@
+# Subfinder
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+
+# Httpx
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+
+# Dirsearch
+git clone https://github.com/maurosoria/dirsearch.git
+
+# Nuclei
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+
+# Golismero
+git clone https://github.com/golismero/golismero.git
+
+# Holehe
+pip3 install holehe
+
+# h8mail
+pip3 install h8mail
+
+# PhoneInfoga
+git clone https://github.com/sundowndev/phoneinfoga.git
