@@ -29,3 +29,53 @@ cd xcs-bugbounty
 chmod +x xcs-bugbounty.sh
 ./xcs-bugbounty.sh
 
+# OUTPUT >>
+
+=============================================
+   XCS Bug Bounty Toolkit - v1.0
+   Recon • Exploit • OSINT • Reporting
+   Company: XCS Security Labs
+=============================================
+
+[+] Starting Recon on: example.com
+---------------------------------------------
+[*] Subdomain Discovery (subfinder + httpx)
+   - api.example.com [200]
+   - dev.example.com [403]
+   - test.example.com [301]
+
+[*] Port Scanning (nmap)
+   - api.example.com: 22/tcp open (ssh)
+   - api.example.com: 443/tcp open (https)
+   - dev.example.com: 80/tcp open (http)
+   - test.example.com: 3306/tcp open (mysql) → POTENTIAL RISK
+
+[*] Directory Brute-force (dirsearch)
+   - /admin (403 Forbidden)
+   - /login (200 OK)
+   - /uploads (200 OK)
+
+[*] Vulnerability Scanning (nuclei + golismero)
+   - api.example.com → CVE-2023-XXXX [High]
+   - dev.example.com → Reflected XSS found at /search?q=
+   - test.example.com → SQLi possible at /products?id=
+
+[*] Email/Phone OSINT
+   - user@example.com → Found on LinkedIn, 2 breaches (pwned DBs)
+   - +91XXXXXXXXXX → Found in spam dataset, flagged on Truecaller
+
+[*] WHOIS & Real IP Lookup
+   - Registrar: NameCheap
+   - Real IP: 192.0.2.45 (Cloudflare masked)
+
+[*] Suspicious/Phishing Check
+   - test.example.com → Potential malware hosting
+
+---------------------------------------------
+[+] Report Generated: reports/example_report.pdf
+   - High: 2
+   - Medium: 3
+   - Low: 1
+   - Informational: 5
+=============================================
+
